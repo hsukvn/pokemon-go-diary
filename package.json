@@ -1,0 +1,24 @@
+{
+  "name": "pokemon-go-iv-api",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-1": "^6.13.0",
+    "babel-register": "^6.11.6",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.13.1",
+    "long": "^3.2.0",
+    "minimist": "^1.2.0",
+    "pogobuf": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": "https://github.com/ilcic/pokemon-go-iv-api.git",
+  "author": "kevinhsu",
+  "license": ""
+}
