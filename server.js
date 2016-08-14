@@ -46,10 +46,12 @@ app.post("/pokemon/list", function(req, res) {
 		const FIELDS = [
 			'name',
 			'nickname',
+			'favorite',
 			'num',
 			'pokemon_id',
-			'minCP',
 			'cp',
+			'minCP',
+			'currCP',
 			'maxCP',
 			'stamina',
 			'maxCP',
