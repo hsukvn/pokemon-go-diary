@@ -1,5 +1,5 @@
 # pokemon-go-iv-api
-Restfulapi server for getting your pokemon's IV in JSON (Pokemon Go)
+Restfulapi server for getting your pokemon's IV and other details including height and weight in JSON (Pokemon Go)
 
 ## Install
 `npm install`
