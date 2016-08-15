@@ -1,11 +1,23 @@
-# pokemon-go-iv-api
-Restfulapi server for getting your pokemon's IV and other details including height and weight in JSON (Pokemon Go)
+# Pokemon Diary
+Restfulapi server for getting your pokemon's IV and other details including height and weight in JSON (Pokemon Go) with a delightful build-in webUI
 
 ## Install
-`npm install`
+1. `npm install`
+1. `npm install -g webpack`
+2. `npm run all`
 
 ## Usage
-`curl -H "Content-Type: application/json" -X POST -d '{"username":"xxxxx", "password": "xxxxx"}'  http://localhost:8887/pokemon/list`
+* `http://localhost:8887/` to see the UI page
+* `curl -H "Content-Type: application/json" -X POST -d '{"username":"xxxxx", "password": "xxxxx"}'  http://localhost:8887/pokemon/list` to call the backend api
 
-## Web UI
-* checkout https://github.com/ilcic/pokemon-go-iv-ui
+## develop UI
+`npm run ui-dev`
+
+## build UI
+`npm run ui-build`
+
+## Screenshot
+![](./screenshot.png)
+
+## Demosite
+http://ilcic.synology.me:9696/

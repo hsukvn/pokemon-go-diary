@@ -2,12 +2,12 @@
 
 require('babel-register')({
 	ignore: false,
-	only: /pokemon-go-iv-api\/src/
+	only: /pokemon-go-diary\/backend/
 });
 
 const _ = require('lodash');
-const Pokemon = require('./src/main').default;
-const Sort = require('./src/sort').default;
+const Pokemon = require('./backend/main').default;
+const Sort = require('./backend/sort').default;
 
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -25,6 +25,8 @@ app.use(function (req, res, next) {
 		res.setHeader('Access-Control-Allow-Credentials', true);
 		next();
 });
+
+app.use('/', express.static(__dirname + '/public'));
 
 app.post("/pokemon/list", function(req, res) {
 	if (!req.body.username || !req.body.password) {
