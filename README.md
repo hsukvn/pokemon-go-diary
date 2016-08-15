@@ -1,5 +1,13 @@
 # Pokemon Diary
-Restfulapi server for getting your pokemon's IV and other details including height, weight and nickname in JSON (Pokemon Go) with a delightful webUI
+Restfulapi server for getting your pokemon's IV, CP and other details including height, weight and nickname in JSON with a delightful webUI
+
+## Features
+- [x] Simple restful api to query pokemon data
+- [x] WebUI to show pokemon details
+- [x] Dockerfile for fast deployment
+- [x] Login with google account
+- [ ] Login with PTC account
+- [ ] WebUI Refactor
 
 ## Install
 1. `npm install`
