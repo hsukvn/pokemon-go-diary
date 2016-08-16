@@ -7,6 +7,7 @@ Restfulapi server for getting your pokemon's IV, CP and other details including 
 - [x] Dockerfile for fast deployment
 - [x] Login with google account
 - [ ] Login with PTC account
+- [ ] Sort by condition
 - [ ] WebUI Refactor
 
 ## Install

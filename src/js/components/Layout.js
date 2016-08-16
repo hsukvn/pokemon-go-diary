@@ -8,7 +8,8 @@ export default class Layout extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			email: "",
+			provider: "google",
+			username: "",
 			password: "",
 			loading: false,
 			pokemonData: [],
@@ -27,7 +28,7 @@ export default class Layout extends React.Component {
 		return (
 			<div>
 				<Header title="Pokemon Diary" />
-				<Account changeState={this.changeState.bind(this)} email={this.state.email} password={this.state.password} loading={this.state.loading} />
+				<Account changeState={this.changeState.bind(this)} provider={this.state.provider} username={this.state.username} password={this.state.password} loading={this.state.loading} />
 				<Table pokemonData={this.state.pokemonData} sort={this.state.sort} />
 			</div>
 		);
