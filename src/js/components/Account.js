@@ -2,15 +2,9 @@ import React from "react";
 import TextField from 'material-ui/TextField';
 import SelectField from 'material-ui/SelectField';
 import RaisedButton from 'material-ui/RaisedButton';
-import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MenuItem from 'material-ui/MenuItem';
 
 export default class Account extends React.Component {
-	getChildContext() {
-		return { muiTheme: getMuiTheme(baseTheme) };
-	}
-
 	handleChange(e) {
 		this.props.changeState(e.target.name, e.target.value);
 	}
@@ -91,7 +85,3 @@ export default class Account extends React.Component {
 		);
 	}
 }
-
-Account.childContextTypes = {
-	muiTheme: React.PropTypes.object.isRequired,
-};

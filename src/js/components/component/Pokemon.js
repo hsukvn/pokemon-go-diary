@@ -3,14 +3,8 @@ import React, { Component } from 'react';
 import styles from './Pokemon.css';
 
 import Avatar from 'material-ui/Avatar';
-import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 export default class Pokemon extends React.Component {
-	getChildContext() {
-		return { muiTheme: getMuiTheme(baseTheme) };
-	}
-
 	render() {
 		const { data } = this.props;
 		const { currCP, minCP, maxCP } = data;
@@ -52,7 +46,3 @@ export default class Pokemon extends React.Component {
 		);
 	}
 }
-
-Pokemon.childContextTypes = {
-	muiTheme: React.PropTypes.object.isRequired,
-};

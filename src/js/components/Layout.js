@@ -1,4 +1,5 @@
 import React from "react";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Header from "./Header";
 import Account from "./Account";
@@ -26,11 +27,13 @@ export default class Layout extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<Header title="Pokemon Diary" />
-				<Account changeState={this.changeState.bind(this)} provider={this.state.provider} username={this.state.username} password={this.state.password} loading={this.state.loading} />
-				<Table pokemonData={this.state.pokemonData} sort={this.state.sort} />
-			</div>
+			<MuiThemeProvider>
+				<div>
+					<Header title="Pokemon Diary" />
+					<Account changeState={this.changeState.bind(this)} provider={this.state.provider} username={this.state.username} password={this.state.password} loading={this.state.loading} />
+					<Table pokemonData={this.state.pokemonData} sort={this.state.sort} />
+				</div>
+			</MuiThemeProvider>
 		);
 	}
 }
