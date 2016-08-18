@@ -23,6 +23,7 @@ export default class Account extends React.Component {
 			data: {
 				username: this.props.username,
 				password: this.props.password,
+				provider: this.props.provider,
 			},
 			success: function(data) {
 				this.props.changeState('pokemonData', data);

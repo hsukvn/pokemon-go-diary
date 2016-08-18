@@ -38,7 +38,7 @@ app.post("/pokemon/list", function(req, res) {
 	if (req.body.sort) {
 		sort = req.body.sort;
 	}
-	const provider = 'google';
+	const provider = req.body.provider ? req.body.provider : 'google';
 
 	const pokemon = new Pokemon({
 		username, password, provider,
